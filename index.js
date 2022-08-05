@@ -42,8 +42,8 @@ const corsOptions = {
 app.use(cors(corsOptions))
 
 // Router
-app.use('/api/veterinarios', veterinarioRoutes);
-app.use('/api/pacientes', pacienteRoutes);
+app.use('api/veterinarios', veterinarioRoutes);
+app.use('api/pacientes', pacienteRoutes);
 
 // Leer el puerto del hosting o el del localhost
 const PORT = process.env.PORT || 4000;
